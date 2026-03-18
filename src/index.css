@@ -10,8 +10,8 @@
   font-weight: 400;
   
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.95);
-  background: linear-gradient(135deg, #000000 0%, #0047ab 100%);
+  color: rgba(135, 98, 42, 0.95);
+  background: linear-gradient(135deg, #845e20 0%, #e8d497 100%);
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,7 +31,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  background: linear-gradient(135deg, #000000 0%, #0047ab 100%);
+  background: linear-gradient(135deg, #695535 0%, #d1c08d 100%);
 }
 
 #root {
@@ -60,7 +60,7 @@ h1 {
   font-weight: 700;
   margin-bottom: 40px;
   letter-spacing: -1px;
-  background: linear-gradient(135deg, #0088ff 0%, #00d4ff 100%);
+  background: linear-gradient(135deg, #fce884 0%, #ead98e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -83,7 +83,7 @@ h2 {
   font-size: 2.2em;
   font-weight: 600;
   margin: 20px 0;
-  color: #fff;
+  color: #3b2a0e;
 }
 
 input {
@@ -94,22 +94,22 @@ input {
   border-radius: 12px;
   margin-bottom: 16px;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.95);
-  color: #333;
+  background: rgba(255, 248, 210, 0.97);
+  color: #3b2a0e;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: 500;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 input::placeholder {
-  color: #999;
+  color: #fad681;
   font-weight: 500;
 }
 
 input:focus {
   outline: none;
-  background-color: #ffffff;
-  box-shadow: 0 12px 40px rgba(0, 136, 255, 0.4);
+  background-color: #fffce8;
+  box-shadow: 0 12px 40px rgba(234, 208, 129, 0.45);
   transform: scale(1.02);
 }
 
@@ -119,20 +119,20 @@ button {
   font-size: 1.1em;
   font-weight: 700;
   font-family: inherit;
-  background: linear-gradient(135deg, #0047ab 0%, #0088ff 100%);
-  color: white;
+  background: linear-gradient(135deg, #ebdbac 0%, #f5d84a 100%);
+  color: #3b2a0e;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  box-shadow: 0 8px 32px rgba(0, 71, 171, 0.3);
+  box-shadow: 0 8px 32px rgba(196, 154, 32, 0.35);
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
 button:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 48px rgba(0, 136, 255, 0.5);
+  box-shadow: 0 12px 48px rgba(254, 230, 111, 0.55);
 }
 
 button:active {
@@ -149,18 +149,18 @@ p {
   margin: 10px 0;
   padding: 0 20px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(59, 42, 14, 0.9);
 }
 
 /* Weather Card */
 div:has(h2) {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 240, 160, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 30px 20px;
   margin-top: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 230, 100, 0.3);
   animation: popIn 0.5s ease-out;
 }
 
@@ -200,12 +200,12 @@ p:has(~ p) {
 
 /* Error Styling */
 p[style*="color: red"] {
-  color: #ff6b6b !important;
-  background: rgba(255, 107, 107, 0.15);
+  color: #e1a072 !important;
+  background: rgba(184, 76, 0, 0.12);
   padding: 12px 16px;
   border-radius: 8px;
   margin-top: 12px;
-  border-left: 4px solid #ff6b6b;
+  border-left: 4px solid #de8e55;
   font-weight: 600;
 }
 
@@ -231,46 +231,46 @@ p[style*="color: red"] {
 
 @media (prefers-color-scheme: light) {
   :root {
-    background: linear-gradient(135deg, #1a1a2e 0%, #4a7ba7 100%);
-    color: #f0f0f0;
+    background: linear-gradient(135deg, #3b2a0e 0%, #baa871 100%);
+    color: #3b2a0e;
   }
 
   body {
-    background: linear-gradient(135deg, #1a1a2e 0%, #4a7ba7 100%);
+    background: linear-gradient(135deg, #3b2a0e 0%, #c6b684 100%);
   }
 
   h1 {
-    background: linear-gradient(135deg, #0088ff 0%, #00d4ff 100%);
+    background: linear-gradient(135deg, #e7d890 0%, #ede1a9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   h2, p {
-    color: #f0f0f0;
+    color: #3b2a0e;
   }
 
   input {
-    background-color: rgba(255, 255, 255, 0.98);
-    color: #333;
+    background-color: rgba(255, 248, 210, 0.98);
+    color: #3b2a0e;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   }
 
   input:focus {
-    box-shadow: 0 12px 40px rgba(0, 136, 255, 0.4);
+    box-shadow: 0 12px 40px rgba(196, 154, 32, 0.45);
   }
 
   button {
-    background: linear-gradient(135deg, #0047ab 0%, #0088ff 100%);
-    box-shadow: 0 8px 32px rgba(0, 71, 171, 0.25);
+    background: linear-gradient(135deg, #d9c27f 0%, #e6d581 100%);
+    box-shadow: 0 8px 32px rgba(196, 154, 32, 0.3);
   }
 
   button:hover {
-    box-shadow: 0 12px 48px rgba(0, 136, 255, 0.4);
+    box-shadow: 0 12px 48px rgba(228, 208, 104, 0.5);
   }
 
   div:has(h2) {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 136, 255, 0.3);
+    background: rgba(255, 240, 160, 0.25);
+    border: 1px solid rgba(196, 154, 32, 0.35);
   }
 }
